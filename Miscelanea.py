@@ -214,3 +214,84 @@ while valor != 0 :
     total = total + valor
   print(total)
 
+#Condicional 1
+print("Pedir un número para ver si es positivo o negativo:")
+n = int(input())
+if (n > 0):
+  print("el número es positivo jsjsjs")
+elif (n < 0):
+  print("el número es negativo jsjsjs")
+else:
+  print("solo es el 0 NMMS")
+
+
+#Condicional 2
+print("Cuál es el mayor y cuál el menor:")
+n1 = int(input("Numero 1:"))
+n2 = int(input("Numero 2:"))
+if n1 == n2:
+    print("Los 2 numeros son iguales")
+elif n1 > n2:
+   print(f"El numero {n1} es mayor que {n2}")
+else:
+    print(f"El numero {n2} es mayor que {n1}")
+
+
+# Condicional 3
+print("El mayor de 3 números:")
+print("                                             ")
+n1 = float(input("Primer número: "))
+n2 = float(input("Segundo número: "))
+n3 = float(input("Tercer número: "))
+
+if n2 < n1 > n3:
+    print("El número mayor es el primero", n1)
+elif n1 < n2 > n3:
+    print("El número mayor es el segundo", n2)
+elif n1 < n3 > n2:
+    print("El número mayor es el tercero", n3)
+
+# Condicional 4
+print("Sumar o Restar")
+n1 = int(input("ingrese el primer numero:"))
+n2 = int(input("ingrese el segundo numero:"))
+if n1 < n2:
+    print(f"el numero mayor es: {n2}")
+    result = n1 + n2
+    print("Resultado de la suma")
+    print(result)
+if n2 < n1:
+    print(f"el numero menor es:{n1}")
+    result = n1 - n2
+    print("Resultado de la resta:")
+    print(result)
+
+# Condicional 5
+print("cosiente a o b:")
+A = float(input("ingrese el dividendo:"))
+B = float(input("ingrese el divisor:"))
+if A == 0 or B == 0:
+    print("No se puede dividir")
+else:
+    Cociente = A / B
+    print(Cociente)
+
+print("\n")
+# Condicional 6
+print("Sumar o mutiplicar:")
+a = float(input("Ingrese numero a: "))
+b = float(input("Ingrese numero b: "))
+if 0 > a or a:
+    c = a + a
+    print(c)
+else:
+    c = b * b
+    print(c)
+# Condicional 7
+print("Año bisiesto o no\n ")
+año = int(input("Año:"))
+if (año % 4 == 0 
+    and (año % 100 !=0)) or (año % 400 == 0):
+      print("El año", str(año) + " es bisiesto")
+      else:
+        print(" el año", str(año) + " no es bisiesto")
